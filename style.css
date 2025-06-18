@@ -1,0 +1,78 @@
+.game
+{
+ position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: black;
+   left: 50%;
+   top: 20%;
+    flex: 1 1 300px;
+    border-radius: 20px;
+}
+.titel
+{
+ font-size: 30px;
+    color: #fa0;
+    background: #f25;
+text-align: center;
+border-radius: 20px;
+}
+
+.square
+{
+    background-color: white;
+    font-size: 30px;
+    translate: 30px 20px;
+    width: 60px;
+    vertical-align: middle;
+    height: 60px;
+     flex: 1 1 300px;
+}
+.playAgen
+{
+    position: absolute;
+    color: aqua;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    left: 70px;
+    top: 260px;
+    font-size: 20px;
+    border-color: beige;
+    background-color: black;
+    
+}
+.playAgen:hover
+{
+    border-color: #fa0;
+    background-color: rgb(232, 232, 229);
+}
+/*          */
+/* الهاتف العمودي */
+@media (max-width: 480px) {
+  .game {
+    flex: 1 1 100%;
+  }
+}
+
+/* الهاتف الأفقي أو الجهاز اللوحي الصغير */
+@media (min-width: 481px) and (max-width: 768px) {
+  .game {
+    flex: 1 1 48%;
+  }
+}
+
+/* شاشة كمبيوتر صغير أو لوحي كبير */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .game {
+    flex: 1 1 30%;
+  }
+}
+
+/* شاشة كمبيوتر كبيرة */
+@media (min-width: 1025px) {
+  .game {
+    flex: 1 1 22%;
+  }
+}
+
